@@ -21,6 +21,13 @@ How to install:<br>
 ```
 RocketChat Configuration
 
+Administration -> Accounts -> Iframe
+- Enabled: yes
+- Iframe URL: *\[zimbra url]*/service/extension/rocket?action=redirect
+- API URL: *\[zimbra url]*/service/extension/rocket?action=signOn
+- Api Method: Get 
+** please read [Read Me] ** You must make sure once you login into your *\[zimbra url]* and go to your *\[API URL]* it generates token before you enable above setting, or you may lock out yourself from rocketchat before you enable above setting. (or you need to doing via rocket rest api is able iframes)
+
 Administration -> LDAP -> Sync/Import
 - Username Field: mail
 - Unique Identifier Field: uid,entryUUID
@@ -46,5 +53,6 @@ Administration -> LDAP -> Sync/Import
 Administration -> LDAP -> User Search
 - Filter: (&(objectClass=person)(memberOf=cn=rocketchat,ou=groups,*dc=exmaple,dc=com)*) **please change to your domain**
 
+[Read Me]: https://github.com/Zimbra-Community/zimbra-rocket/blob/master/README.md
 
 
