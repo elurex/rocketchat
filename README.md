@@ -13,6 +13,8 @@ Package version
 
 Changes are made to /opt/Rocket.Chat/programs/server/app/app.js only. 
 
+Zimbra will use email as uid but when it import into rocket chat, it will change from user\[@]domain.com to user\[.]domain.com, and rocketchat heavily relies on its user.username variable to identify ldap sync, in order to solve this issue, I have switch keyword ``#{username}`` in RocketChat to ``#{name}`` which in terms will use ``${user.email}`` for ldap groupOfNames lookup purpose. However, due to strange rocketchat login procedure, it will sync user's LDAP info at login again, however, and it can only use ``#{username}`` or ``#{userdn}`` and at login stage, due to ``user.email`` can be sync from LDAP so at this stage, it is still not defined, however, for zimbra-rocketchat integration email address shouldn't be changed due to it will be a different rocket chat account if email address is changed.
+
 How to install:<br>  
 ```
     wget https://github.com/elurex/rocketchat/raw/master/app.js; 
