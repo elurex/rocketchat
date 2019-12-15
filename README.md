@@ -26,7 +26,7 @@ Administration -> Accounts -> Iframe
 - Iframe URL: *\[zimbra url]*/service/extension/rocket?action=redirect
 - API URL: *\[zimbra url]*/service/extension/rocket?action=signOn
 - Api Method: Get 
-** please read [Read Me] ** You must make sure once you login into your *\[zimbra url]* and go to your *\[API URL]* it generates token before you enable above setting, or you may lock out yourself from rocketchat before you enable above setting. (or you need to doing via rocket rest api is able iframes)
+**please read [Read Me]** You must make sure once you login into your *\[zimbra url]* and go to your *\[API URL]* it generates token before you enable above setting, or you may lock out yourself from rocketchat before you enable above setting. (or you need to doing via rocket rest api is able iframes)
 
 Administration -> LDAP -> Sync/Import
 - Username Field: mail
