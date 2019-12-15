@@ -44,7 +44,7 @@ Administration -> LDAP -> Sync/Import
 - User Data Group Map: { "sudoers": "admin" } __*add or modify your mapping to role in rocketchat*__
 - Auto Sync LDAP Groups to Channels: yes
 - Channel Admin: rocket.chat
-- LDAP Group Channel Map: { "sudoers": \[ "itadmin", "general" ] }
+- LDAP Group Channel Map: { "sudoers": \[ "itadmin", "general" ] } __*add or modify your mapping to channel in rocketchat*__
 - Auto Remove Users from Channels : no
 - Sync User Avatar: yes __*use jpegPhoto*__
 - Background Sync: yes
