@@ -2,7 +2,7 @@
 Tweaks [RocketChat] on ldap filter allows better intergration with [Zimbra Collaboration] using [Zimbra-Rocket]
 
 Package version
-- [RocketChat] 2.3.2 from https://github.com/RocketChat/Rocket.Chat/archive/2.3.2.tar.gz
+- [RocketChat] 2.4.0 from https://github.com/RocketChat/Rocket.Chat/archive/2.4.0.tar.gz
 - [Zimbra-Rocket] 0.0.3b
 - [Zimbra Collaboration] 8.8.15
 - [LDAP] Group is using **groupOfNames** not *posixGroup*
