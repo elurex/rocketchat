@@ -17,7 +17,7 @@ Changes are made to /opt/Rocket.Chat/programs/server/app/app.js only.
 
 How to install:<br>  
 ```
-    wget https://github.com/elurex/rocketchat/raw/master/app.js; 
+    wget https://raw.githubusercontent.com/elurex/rocketchat/master/app.js;
     chowwn rocketchat:rocketchat app.js; 
     mv app.js /opt/Rocket.Chat/programs/server/app/app.js; 
 ```
